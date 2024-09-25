@@ -1,0 +1,29 @@
+{
+  "name": "chat-wave",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd chat-wave-client/client && npm run dev ",
+    "server": "cd chat-wave-server/server && npx nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshal-shelke/Chat-Wave.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshal-shelke/Chat-Wave/issues"
+  },
+  "homepage": "https://github.com/harshal-shelke/Chat-Wave#readme",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  }
+}
